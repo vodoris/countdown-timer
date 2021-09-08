@@ -22,18 +22,22 @@ body {
 h1 {
   margin-top: 0;
   font-weight: normal;
-  font-size: 5rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .cd-container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .big-number {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
   line-height: 1;
-  margin: 0 3rem;
+  margin: 0 2rem;
 }
 
 .cd-ele {
@@ -42,4 +46,15 @@ h1 {
 
 .cd-ele span {
   font-size: 2rem;
+}
+
+/* Mobile Only */
+@media (max-width: 768px) {
+  .big-number {
+    margin: 1rem 4rem 0rem;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
 }
